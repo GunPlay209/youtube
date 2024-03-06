@@ -1,9 +1,12 @@
-1. Install git on computer
-2. git clone https://github.com/GunPlay209/youtube.git
-3. Open "youtube" folder in VSC
-4. In terminal: npm i
-5. In terminal: npm run start
-6. Open in browser: localhost:4200
+1.0 Install git on computer
+1.1 Install nodejs on computer
+1.2 In terminal: npm i -g nx
+1.3 In terminal: npm i -g @angular/cli
+2.0 git clone https://github.com/GunPlay209/youtube.git
+3.0 Open "youtube" folder in VSC
+4.0 In terminal: npm i
+5.0 In terminal: npm run start
+6.0 Open in browser: localhost:4200
 
 # SampleMonorepo
 
