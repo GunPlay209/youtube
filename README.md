@@ -1,3 +1,10 @@
+1. Install git on computer
+2. git clone https://github.com/GunPlay209/youtube.git
+3. Open "youtube" folder in VSC
+4. In terminal: npm i
+5. In terminal: npm run start
+6. Open in browser: localhost:4200
+
 # SampleMonorepo
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
