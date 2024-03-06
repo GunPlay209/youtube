@@ -1,0 +1,76 @@
+{
+  "name": "sample-monorepo",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "sample-monorepo",
+  "sourceRoot": "apps/sample-monorepo/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/sample-monorepo",
+        "index": "apps/sample-monorepo/src/index.html",
+        "browser": "apps/sample-monorepo/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/sample-monorepo/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/sample-monorepo/src/favicon.ico",
+          "apps/sample-monorepo/src/assets"
+        ],
+        "styles": ["apps/sample-monorepo/src/styles.scss"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "sample-monorepo:build:production"
+        },
+        "development": {
+          "buildTarget": "sample-monorepo:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "sample-monorepo:build"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "sample-monorepo:build",
+        "staticFilePath": "dist/apps/sample-monorepo/browser"
+      }
+    }
+  }
+}
