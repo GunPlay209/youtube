@@ -15,8 +15,16 @@
     "@angular/platform-browser": "~17.1.0",
     "@angular/platform-browser-dynamic": "~17.1.0",
     "@angular/router": "~17.1.0",
+    "@auth0/auth0-angular": "^2.2.3",
     "@nx/angular": "18.0.7",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "express": "^4.18.3",
+    "express-validator": "^7.0.1",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.9.2",
     "rxjs": "~7.8.0",
+    "start": "^5.1.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
   },
@@ -53,10 +61,15 @@
     "jest-environment-jsdom": "^29.4.1",
     "jest-preset-angular": "~13.1.4",
     "jsonc-eslint-parser": "^2.1.0",
+    "nodemon": "^3.1.0",
     "nx": "18.0.7",
     "prettier": "^2.6.2",
     "ts-jest": "^29.1.0",
     "ts-node": "10.9.1",
     "typescript": "~5.3.2"
-  }
+  },
+  "description": "1.0 Install git on computer\r 1.1 Install nodejs on computer\r 1.2 In terminal: npm i -g nx\r 1.3 In terminal: npm i -g @angular/cli\r 2.0 git clone https://github.com/GunPlay209/youtube.git\r 3.0 Open \"youtube\" folder in VSC\r 4.0 In terminal: npm i\r 5.0 In terminal: npm run start\r 6.0 Open in browser: localhost:4200",
+  "main": "jest.preset.js",
+  "keywords": [],
+  "author": ""
 }

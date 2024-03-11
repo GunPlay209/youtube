@@ -1,0 +1,9 @@
+{
+  "name": "consoles-web-ui",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/consoles/web/ui/src",
+  "prefix": "sample-monorepo",
+  "tags": [],
+  "projectType": "library",
+  "targets": {}
+}
